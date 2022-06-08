@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elérhetőség</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Elérhetőségünk</h1>
+    <ul id="menu">
+        <li class="menu"><a href="/index.html">Kezdőoldal</a></li>
+        <li class="menu"><a href="/pages/products.html">Termékek</a></li>
+        <li class="menu"><a href="/pages/orders.html">Rendelés</a></li>
+        <li class="menu"><a href="/pages/price.html">Áraink</a></li>
+        <li class="menu"><a href="/pages/contact.html">Rólunk</a></li>
+        <li class="menu"><a href="/pages/bt.html">Minta Bootstrap</a></li>
+        <li class="menu"><a href="/pages/adminbt_int.html">Admin TESZT Felület</a></li>
+    </ul>
+    <div class="soros">
+      <div id="elvalaszto">
+          <select name="HetNap" id="HetNap">
+              <option value="0">Hétfő</option>
+              <option value="1">Kedd</option>
+              <option value="2">Szerda</option>
+              <option value="3">Csütörtök</option>
+              <option value="4">Péntek</option>
+              <option value="5">Szombat</option>
+              <option value="6">Vasárnap</option>
+          </select>
+          <div id="Fok">
+            <input type="radio" name="Fok" id="Celsius" checked>
+            <label for="Celsius">Celsius</label>
+            <input type="radio" name="Fok" id="fahrenheit">
+            <label for="fahrenheit">Fahrenheit</label>
+          </div>
+          <button id="weatherWidget-btn" onclick="weatherWidget()">Ajánlat Megtekintése</button>
+      </div>
+      <span id='Ajanlat' class="soros">Ajánlat</span>
+      <span id='Homer' class="soros">Hő</span>
+      <br>
+      <span class="soros WW">
+          <small id="a">Heti Átlag</small>
+          <small id="b">Heti Min</small>
+          <small id="c">Het Max</small>
+      </span>
+      <script src="/js/getdata.js"></script>
+      <script src="/js/napiajanlat.js"></script>
+  </div>
+    <h2>Címünk</h2>
+    <p class="contant">
+        <b>7086</b> Ozora, Tas vezér u. 36. <i>(Magyarország, Tolna megye)</i> 
+    </p>
+    <h2>Telefonszámunk</h2>
+    <p class="contant">
+        <strong>Vezetékes szám:</strong> <em>(74) 911-228</em>
+    </p>
+    <h2>Nyilvántartásunk</h2>
+    <table class="contant">
+      <caption>Ozorai Üzletünk nyitvatartása</caption>
+      <thead>
+        <tr class="fejlec">
+          <th>Napok</th>
+          <th>Nyitás</th>
+          <th>Zárás</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Hétfőtől Péntekig</td>
+            <td>7:30</td>
+            <td>17:30</td>
+        </tr>
+        <tr>
+          <td>Hétvégén</td>
+          <td>10 óra</td>
+          <td rowspan="2">14 óra</td>
+        </tr>
+        <tr >
+          <td>Szabadnapokon és Ünnepnapokon</td>
+          <td>9 óra</td>
+        </tr>
+        <tr>
+          <td>Január 1.</td>
+          <td colspan="2">Zárva</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">&copy; 2022</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Megközelítés</h2>
+    <p class="contant">
+        A településünket megközelíthető busszal, kerékpárral, autóval valamint gyalogos módon!
+    </p>
+    <p class="contant"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87481.94112129725!2d18.246694793503604!3d46.74891536970788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474277e9e667f6f1%3A0x3d2efd81abf460e1!2sOzora%2C%207086!5e0!3m2!1shu!2shu!4v1652617691384!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</body>
+</html>
